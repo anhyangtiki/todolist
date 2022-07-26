@@ -1,0 +1,8 @@
+{
+    "defaultTitle": "TodoList",
+    "usingComponents": {
+        "search-bar": "@tiki.vn/tini-ui/es/search-bar/index",
+        "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
+        "button": "@tiki.vn/tini-ui/es/tu-button/index"
+    }
+}

@@ -1,0 +1,4 @@
+@import '@tiki.vn/tini-style/es/index.tcss';
+.page {
+  background-color: #f7f7f7;
+}
