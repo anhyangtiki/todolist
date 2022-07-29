@@ -10,15 +10,15 @@
   </view>
   
   <checkbox-group>
-    <block tiki:for="{{tasks}}">
+    <label tiki:for="{{tasks}}">
       <list-item padding="true">
-        <checkbox slot="prefix"/>
-        {{item}}
+        <checkbox slot="prefix" onChange="completedTask" data-index="{{index}}"/>
+        <text class="{{item.completed ? 'text-green' : ''}}">{{item.task}}</text>
         <button slot="suffix" size="small" onTap="deleteTask" data-index="{{index}}">
           Delete
         </button>
       </list-item>
-    </block>
+    </label>
   </checkbox-group>
 
 </view>
