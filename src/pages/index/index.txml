@@ -6,7 +6,7 @@
     shape="pill"
     onInput="onInput"
     />
-    <button shape="pill mt-large " onTap="addTask">Enter</button>
+    <button shape="pill mt-large" onTap="addTask">Enter</button>
   </view>
   
   <checkbox-group>
@@ -14,6 +14,9 @@
       <list-item padding="true">
         <checkbox slot="prefix" onChange="completedTask" data-index="{{index}}"/>
         <text class="{{item.completed ? 'text-green' : ''}}">{{item.task}}</text>
+        <button class="mr-small" slot="suffix" size="small" onTap="editTask" data-index="{{index}}">
+          Edit
+        </button>
         <button slot="suffix" size="small" onTap="deleteTask" data-index="{{index}}">
           Delete
         </button>

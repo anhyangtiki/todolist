@@ -8,6 +8,7 @@ Page({
     my.getStorage({
       key: this.data.keyList,
       success: (res) => {
+        console.log(res.data.tasks)
         this.setData({
           tasks: res.data.tasks
         });
@@ -62,5 +63,8 @@ Page({
       }
     })
     console.log(this.data.tasks[e.currentTarget.dataset.index])
+  },
+  editTask(e) {
+    my.redirectTo({url: "pages/edit/index?index="+e.currentTarget.dataset.index+"&keyList="+this.data.keyList})
   }
 });

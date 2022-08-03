@@ -1,8 +1,9 @@
 {
-    "pages": [
-        "pages/index/index"
-    ],
-    "window": {
-        "defaultTitle": "TodoList"
-    }
+  "pages": [
+    "pages/index/index",
+    "pages/edit/index"
+  ],
+  "window": {
+    "defaultTitle": "TodoList"
+  }
 }

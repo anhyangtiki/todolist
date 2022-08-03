@@ -1,0 +1,13 @@
+<view class="container m-large">
+  <textfield 
+    labelText="Edit task" 
+    placeholder="Click to type here" 
+    shape="pill"
+    value="{{inputText}}"
+    onInput="onInput"
+  />
+  <view class="mt-small flex">
+    <button class="w-full mr-small" shape="rounded" disabled={{empty}} onTap="editTask">Save edit</button>
+    <button class="w-full" shape="rounded" type="outline" onTap="returnHome">Cancel</button>
+  </view>
+</view>

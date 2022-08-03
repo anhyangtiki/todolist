@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "TodoList",
+  "usingComponents": {
+      "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+      "button": "@tiki.vn/tini-ui/es/tu-button/index"
+  }
+}
